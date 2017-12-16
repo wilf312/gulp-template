@@ -12,7 +12,7 @@ const path = {
       './src/ejs/**/*.ejs',
       '!./src/ejs/**/_*.ejs'
     ],
-    dist: './htdocs/'
+    dist: './dist/'
   },
   json: {
     package: './package.json',
@@ -47,7 +47,7 @@ gulp.task('ejs', () => {
 
 gulp.task('clean', function () {
   return del([
-    'htdocs/**/*.ejs',
+    'dist/**/*.ejs',
     '!dist/mobile/deploy.json'
   ]);
 });
